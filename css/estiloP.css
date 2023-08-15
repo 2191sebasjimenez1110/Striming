@@ -109,31 +109,54 @@ header nav .logoNav img {
    color: #ffffffaf;
 }
 
+
+
 .buscar {
    right: 0;
    align-items: end;
    margin-right: 20px;
    display: flex;
-   width: 210px;
+   width: 167px;
    height: 5px;
    padding: 10px;
    border: 1px solid #ffffff49;
    border-radius: 30px;
    justify-content: center;
    align-items: center;
+   color: #FFFFFF;
+   position: relative;
+   overflow: hidden;
 }
 
+.buscar input{
+   width: 41%;
+   height: 76%;
+   background: none;
+   color: #FFFFFF;
+   padding-top: 20px;
+   border: none;
+   outline: 0px;
+}
+.buscar .lbl-buscar{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   pointer-events: none;
+   border-bottom: 1px solid #c7c7c7;
+}
 #lupa {
    height: 15px;
    padding-right: 12px;
    width: 15px;
 }
 
-header .buscar input {
-   margin-right: 10px;
-   background: transparent;
-   border: none;
+.filtro{
+   display: none;
 }
+
+
+
 
 .contenedorImg {
    position: absolute;
