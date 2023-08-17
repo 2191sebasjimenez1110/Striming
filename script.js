@@ -44,14 +44,12 @@ document.addEventListener('keyup', e => {
             const titulo = pelicula.querySelector('.titulo2').textContent.toLowerCase();
             if (titulo.includes(searchTerm)) {
                 pelicula.classList.remove("filtro");
-
             } else {
                 pelicula.classList.add("filtro");
             }
         });
 
     }
-
 });
 
 
