@@ -40,108 +40,121 @@
                     <img src="./imagenes/1.webp" alt="">
                     <div class="text">
                         <h1>Avengers Endgame</h1>
-                        <button>Reproducir</button>
+                        <button id="open" data-modal="modal17">Reproducir</button>
                     </div>
                 </li>
                 <li>
                     <img src="./imagenes/2.jpeg" alt="">
                     <div class="text">
                         <h1>Euphoria</h1>
-                        <button>Reproducir</button>
+                        <button id="open" data-modal="modal18">Reproducir</button>
                     </div>
                 </li>
                 <li>
                     <img src="./imagenes/3.jpeg" alt="">
                     <div class="text">
                         <h1>After</h1>
-                        <button>Reproducir</button>
+                        <button id="open" data-modal="modal19">Reproducir</button>
                     </div>
                 </li>
                 <li>
                     <img src="./imagenes/4.webp" alt="">
                     <div class="text">
                         <h1>Lucifer</h1>
-                        <button>Reproducir</button>
+                        <button id="open" data-modal="modal16">Reproducir</button>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
-    <div class="titulo">
-        <h1>Series</h1>
-    </div>
+
+    <div id="movie-list" class="container-peliculas">
+        <div class="titulo">
+            <h1>Series</h1>
+            <hr>
+        </div>
+        <div id="genre-buttons"> <!--filtro generos-->
+            <div class="icono-pelicula"><img src="imagenes/cinta.png" alt=""></div>
+            <button class="genre-button" data-genre="all">Todo</button>
+            <button class="genre-button" data-genre="accion">Accion</button>
+            <button class="genre-button" data-genre="comedia">Comedia</button>
+            <button class="genre-button" data-genre="terror">Terror</button>
+            <button class="genre-button" data-genre="romance">Romance</button>
+        </div>
     <section class="peliculas_series">
 
-        <div class="tarjeta" data-modal="modal1"
+        <div class="tarjeta" data-modal="modal1" data-genre="accion"
             style="--i:url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/4QU5SYV7CREFBGFOT5ZTYNBDEM.jpeg)">
             <h2 class="titulo2">Loki</h2>
         </div>
         
-        <div class="tarjeta" data-modal="modal2"
+        <div class="tarjeta" data-modal="modal2" data-genre="romance"
             style="--i:url(https://m.media-amazon.com/images/M/MV5BNThmMzJlNzgtYmY5ZC00MDllLThmZTMtNTRiMjQwNmY0NmRhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg)">
             <h2 class="titulo2">Anne With an E</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal3" style="--i:url(https://www.clarin.com/img/2023/06/14/rqwjmnFc__2000x1500__1.jpg)">
+        <div class="tarjeta" data-modal="modal3" data-genre="romance" style="--i:url(https://www.clarin.com/img/2023/06/14/rqwjmnFc__2000x1500__1.jpg)">
             <h2 class="titulo2">Perfil Falso</h2>
         </div>
         
-        <div class="tarjeta" data-modal="modal4" style="--i:url(https://m.media-amazon.com/images/I/61iczvxWiVL._AC_UF894,1000_QL80_.jpg)"> <h2 class="titulo2">Riverdale</h2>
+        <div class="tarjeta" data-modal="modal4" data-genre="accion" style="--i:url(https://m.media-amazon.com/images/I/61iczvxWiVL._AC_UF894,1000_QL80_.jpg)"> <h2 class="titulo2">Riverdale</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal5"
+        <div class="tarjeta" data-modal="modal5" data-genre="comedia"
             style="--i:url(https://static1.purebreak.com.br/articles/8/98/95/8/@/395175--elite-8-perguntas-que-queremos-ver-re-diapo-3.jpg)"> <h2 class="titulo2">Elite</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal6" style="--i:url(https://flxt.tmsimg.com/assets/p16091714_b_v13_aj.jpg)">
+        <div class="tarjeta" data-modal="modal6" data-genre="accion" style="--i:url(https://flxt.tmsimg.com/assets/p16091714_b_v13_aj.jpg)">
                 <h2 class="titulo2">The Umbrella Academy</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal7"
+        <div class="tarjeta" data-modal="modal7" data-genre="romance"
             style="--i:url(https://images.justwatch.com/poster/301902222/s718/el-baile-de-las-luciernagas.%7Bformat%7D)">
             <h2 class="titulo2">El Baile De Las Luciernagas</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal8"
+        <div class="tarjeta" data-modal="modal8" data-genre="terror"
             style="--i:url(https://images-na.ssl-images-amazon.com/images/S/pv-target-images/de05a8b5c699ace32598dc9060ba69ed9a1c2b16ca4758799295ba2d481e2548._RI_TTW_.jpg)"><h2 class="titulo2">Pretty Little Liars</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal9" style="--i:url(https://m.media-amazon.com/images/I/81ah9CUoDaL._AC_UF894,1000_QL80_.jpg)">
+        <div class="tarjeta" data-modal="modal9" data-genre="accion" style="--i:url(https://m.media-amazon.com/images/I/81ah9CUoDaL._AC_UF894,1000_QL80_.jpg)">
                 <h2 class="titulo2">Sex Education</h2>
         </div>
         
 
-        <div class="tarjeta" data-modal="modal10"
+        <div class="tarjeta" data-modal="modal10" data-genre="romance"
             style="--i:url(https://m.media-amazon.com/images/M/MV5BZDNiZTEzMjgtNmU5OS00Yjc2LWJlMTUtNDI1ZGEzZTkxNzE5XkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_.jpg)">
             <h2 class="titulo2">Control Z</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal11"
+        <div class="tarjeta" data-modal="modal11" data-genre="accion"
             style="--i:url(https://pics.filmaffinity.com/Quiaen_matao_a_Sara_Serie_de_TV-410324670-large.jpg)">
             <h2 class="titulo2">¿Quien mato a sara?</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal12"
+        <div class="tarjeta" data-modal="modal12" data-genre="terror"
             style="--i:url(https://applications-media.feverup.com/image/upload/f_auto,w_550,h_550/fever2/plan/photo/1278fd74-b301-11ed-8334-52172309e0c0.jpg)">
             <h2 class="titulo2">Stranger Things</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal13" style="--i:url(https://images.justwatch.com/poster/301679927/s592/manifest)">
+        <div class="tarjeta" data-modal="modal13" data-genre="terror" style="--i:url(https://images.justwatch.com/poster/301679927/s592/manifest)">
             <h2 class="titulo2">Manifiesto</h2>
         </div>
 
 
-        <div class="tarjeta" data-modal="modal14" style="--i:url(https://www.themoviedb.org/t/p/w500/At07X7YA9O8LSKhhtm82oCR9eTP.jpg)"><h2 class="titulo2">¿Que le paso a Lunes?</h2>
+        <div class="tarjeta" data-modal="modal14" data-genre="comedia" style="--i:url(https://www.themoviedb.org/t/p/w500/At07X7YA9O8LSKhhtm82oCR9eTP.jpg)"><h2 class="titulo2">¿Que le paso a Lunes?</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal15" style="--i:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9DvaNyEuAGNQmxWMVfrlpzea_mCNoEZTloMaC5DlWnL8zk24XemCEr0fSd6XHT6WHLTE&usqp=CAU)"><h2 class="titulo2">¿Que le paso a Lunes?</h2>
+        <div class="tarjeta" data-modal="modal15" data-genre="romance" style="--i:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9DvaNyEuAGNQmxWMVfrlpzea_mCNoEZTloMaC5DlWnL8zk24XemCEr0fSd6XHT6WHLTE&usqp=CAU)"><h2 class="titulo2">¿Que le paso a Lunes?</h2>
         </div>
 
-        <div class="tarjeta" data-modal="modal16"
+        <div class="tarjeta" data-modal="modal16" data-genre="accion"
             style="--i:url(https://cdn.kobo.com/book-images/6a6200c1-eaad-4a17-9a28-b38b2c3876c9/1200/1200/False/lucifer-66.jpg)"><h2 class="titulo2">Lucifer</h2>
         </div>
         
     </section>
+    </div>
+    
     <div id="modal1" class="modal">
         <div class="container-modal">
             <iframe class="video" src="https://www.youtube.com/embed/DkskOhoQpuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -350,6 +363,45 @@
         </div>
     </div>
 
+    <div id="modal17" class="modal">
+        <div class="container-modal">
+            <iframe class="video" src="https://www.youtube.com/embed/TcMBFSGVi1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descripcion">
+                <h1 class="titulo-descripcion">Avengers Endgame</h1>
+                <p> La trama sigue a los Vengadores mientras intentan revertir el daño causado por el villano Thanos, quien aniquiló a la mitad de la vida en el universo usando las Gemas del Infinito. Los héroes restantes se unen en un último esfuerzo desesperado para revertir el chasquido de Thanos y restaurar la normalidad. La película combina acción intensa con momentos emotivos y concluye numerosas historias de los personajes del MCU.</p>
+            </div>
+            <div class="cerrar">
+                <img src="./imagenes/cerrar.png" class="close-modal" data-modal="modal17"></img>
+            </div>
+    </div>
+    </div>
+
+    <div id="modal18" class="modal">
+        <div class="container-modal">
+            <iframe class="video" src="https://www.youtube.com/embed/nqSQUrlnB9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descripcion">
+                <h1 class="titulo-descripcion">Euphoria</h1>
+                <p>"Euphoria" es una serie de televisión dramática que sigue la vida de un grupo de jóvenes mientras navegan por las complejidades de la adolescencia. La serie aborda temas como las relaciones, las adicciones, la identidad, la sexualidad y los desafíos emocionales que enfrentan. Con un enfoque crudo y visualmente impactante, "Euphoria" ofrece una mirada honesta y a menudo provocadora a las vidas de sus personajes mientras exploran cuestiones profundas y contemporáneas.</p>
+            </div>
+            <div class="cerrar">
+                <img src="./imagenes/cerrar.png" class="close-modal" data-modal="modal18"></img>
+            </div>
+    </div>
+    </div>
+
+    <div id="modal19" class="modal">
+        <div class="container-modal">
+            <iframe class="video" src="https://www.youtube.com/embed/3zjxECCWwrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descripcion">
+                <h1 class="titulo-descripcion">After</h1>
+                <p> La trama sigue a Tessa Young, una joven estudiante universitaria con una vida organizada y predecible, que se ve atraída por el enigmático y problemático Hardin Scott. A medida que su relación se desarrolla, Tessa se adentra en un mundo de pasión y turbulencia emocional que desafía sus creencias y cambia su perspectiva sobre el amor y la vida. La película explora los altibajos de una relación intensa y apasionada, mientras Tessa y Hardin luchan por encontrar su camino en medio de desafíos y secretos.</p>
+            </div>
+            <div class="cerrar">
+                <img src="./imagenes/cerrar.png" class="close-modal" data-modal="modal19"></img>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="redes">
             <p class="copy"> &copy;Arconix2023</p>
@@ -386,9 +438,10 @@
     </footer>
     
     
-<script src="script.js"></script>
-    <script src="js.js"></script>
-    <script src="modal.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/filtro.js"></script>
 
 </body>
 
