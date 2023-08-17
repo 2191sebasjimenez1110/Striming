@@ -1,8 +1,10 @@
 * {
    padding: 0;
    margin: 0;
+font-family: 'Acme', sans-serif;
+font-family: 'Nuosu SIL', serif;
+font-family: 'Roboto', sans-serif;
 }
-
 /*Barra de navegacion*/
 header {
    width: 100%;
@@ -128,7 +130,7 @@ header nav .logoNav img {
    overflow: hidden;
 }
 
-.buscar input{
+.buscar input {
    width: 41%;
    height: 76%;
    background: none;
@@ -137,7 +139,8 @@ header nav .logoNav img {
    border: none;
    outline: 0px;
 }
-.buscar .lbl-buscar{
+
+.buscar .lbl-buscar {
    position: absolute;
    bottom: 0;
    left: 0;
@@ -145,15 +148,19 @@ header nav .logoNav img {
    pointer-events: none;
    border-bottom: 1px solid #c7c7c7;
 }
+
 #lupa {
    height: 15px;
    padding-right: 12px;
    width: 15px;
 }
 
-.filtro{
+.filtro {
    display: none;
 }
+
+
+
 
 .contenedorImg {
    position: absolute;
@@ -162,105 +169,95 @@ header nav .logoNav img {
 
 /*Fin de la barra*/
 
-/* slader diseño*/
-.hero {
+
+/* Inicio de barra de generos*/
+/*Fin Barra*/
+
+#movie-list {
    width: 100%;
-   height: 600px;
-   display: grid;
-
-}
-
-.slide {
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
-   background: -webkit-linear-gradient(bottom right, #5676b6, #282F59, #1D2044);;
-}
-
-.slide ul {
    display: flex;
-   padding: 0;
-   width: 400%;
-   animation: slide 30s infinite ease-in-out;
 }
 
-.slide li {
-   position: relative;
-   list-style: none;
-   width: 100%;
-}
-
-.text {
-   width: 40%;
+.peliculas_series {
    display: flex;
-   flex-flow: column;
-   align-items: start;
+   width: 80%;
+   align-items: center;
    justify-content: center;
-   position: absolute;
-   gap: 2rem;
-   top: 40vh;
-   left: 7rem;
+   min-height: 100vh;
+   background: #1D2044;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   padding: 50px;
+   margin-left: 20%;
 }
 
-.text h1 {
-   color: #fff;
-   font-size: 4em;
-}
-
-.text button {
-   background: -webkit-linear-gradient(bottom right, #5676b6, #282F59, #1D2044);
-   color: #fff;
-   font-size: 1em;
-   border: none;
-   border-radius: 17px;
-   height: 5vh;
-   width: 15rem;
-   margin-left: 10px;
-}
-
-.slide img {
-   opacity: 4;
+.peliculas_series h1{
    width: 100%;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 20px;
+   color: #fff;
+   font-size: 30px;
+   
+   
+}
+.icono-pelicula {
+   background: #050f26;
+   text-align: center;
+   width: 100%;
+   padding: 35% 0 25px 0;
+}
+
+.icono-pelicula img {
+   width: 80px;
+}
+.peliculas_series h1{
+   width: 100%;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 20px;
+   color: #fff;
+   font-size: 30px;
+   
+}
+
+#genre-buttons {
+   display: flex;
+   width: 20%;
+   flex-direction: column;
+   padding: 20px 20px;
+   background: #050f26;
+   position: fixed;
    height: 100%;
 }
 
-@keyframes slide {
-   0% {
-      margin-left: 0;
-   }
-
-   20% {
-      margin-left: 0;
-   }
-
-   25% {
-      margin-left: -100%;
-   }
-
-   45% {
-      margin-left: -100%;
-   }
-
-   50% {
-      margin-left: -200%;
-   }
-
-   70% {
-      margin-left: -200%;
-   }
-
-   75% {
-      margin-left: -300%;
-   }
-
-   100% {
-      margin-left: -300%;
-   }
+#genre-buttons button {
+   background-color: #050f26;
+   margin: 8px 8px 20px;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 5px;
+   position: relative;
+   display: inline-block;
+   padding: 7px;
+   letter-spacing: 4px;
+   font-size: 16px;
+   overflow: hidden;
+   transition: 0.2s;
+   text-align: center;
+   border: none;
 }
 
-/* fin del slader*/
+#genre-buttons button:hover {
+   background: #1D2044;
+   box-shadow: 0 0 10px #1949c3, 0 0 40px #1949c3, 0 0 80px #1949c3;
+}
 .titulo {
-   background: -webkit-linear-gradient(bottom right, #5676b6, #282F59, #1D2044);;
+   background: #1D2044;
    text-align: center;
 }
 
@@ -280,7 +277,6 @@ header nav .logoNav img {
    flex-wrap: wrap;
    padding: 50px;
 }
-
 
 .tarjeta {
    align-items: baseline;
@@ -372,6 +368,9 @@ header nav .logoNav img {
    height: 35px;
    width: 35px;
 }
+
+/*Final Modal*/
+
 /*Inicio Footer*/
 footer {
    background-color: #050f26;
@@ -429,6 +428,7 @@ footer {
    align-items: start;
    padding: 100px;
 }
+
 .informacion {
    color: #FFFFFF;
    flex-direction: column;
@@ -436,12 +436,12 @@ footer {
    line-height: 28px;
 }
 
-.informacion li{
+.informacion li {
    gap: 1rem;
    list-style: none;
 }
 
-#imagenesFooter{
+#imagenesFooter {
    width: 100%;
    gap: 2rem;
    padding-bottom: 20px;
